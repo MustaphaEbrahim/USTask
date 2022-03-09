@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Detials.view.DetailsItemActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/xlarge_margin"
+        android:text="Customer Details"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <CheckedTextView
+        android:id="@+id/CustomerDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/ic_baseline_arrow_drop_down_24"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tajawal_bold"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/xxlarge_margin"
+        android:text="Customer Name:"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/CustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/xmedium_margin"
+        android:text="Order Number:"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/orderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/CustomerName" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/xmedium_margin"
+        android:text="Order Date:"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/orderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/orderNumber" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/xmedium_margin"
+        android:text="Payment Option:"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/PaymentOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Cash"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/orderNumber" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/viewColor"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+    <TextView
+        android:id="@+id/textdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:text="Order Details"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <CheckedTextView
+        android:id="@+id/OrderDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/ic_baseline_arrow_drop_down_24"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <LinearLayout
+        android:id="@+id/tabDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textdetails">
+
+        <TextView
+            android:id="@+id/items"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/tajawal_bold"
+            android:text="Item(s)"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Quantity"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/tajawal_bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:paddingStart="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/tajawal_bold"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/DetailsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabDetails"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <View
+        android:id="@+id/view_order"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/viewColor"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetailsRecyclerView" />
+    <LinearLayout
+        android:id="@+id/ll_sumPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_order">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tajawal_bold"
+                android:textSize="14sp"
+                android:text="Subtotal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="4dp"
+                android:fontFamily="@font/tajawal_bold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="Taxes" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="Delivery" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="Discount" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="29dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subtotalLE"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="LE"/>
+
+            <TextView
+                android:id="@+id/taxesLE"
+                android:layout_width="wrap_content"
+                android:paddingTop="4dp"
+                android:fontFamily="@font/tajawal_bold"
+                android:layout_height="wrap_content"
+                android:text="LE" />
+            <TextView
+                android:id="@+id/deliveryLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="LE" />
+            <TextView
+                android:id="@+id/discountLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="0 LE" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/viewColor"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_sumPrice" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:paddingTop="5dp"
+        android:text="Total"
+        android:textSize="16sp"
+        android:fontFamily="@font/tajawal_bold"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_total_price" />
+
+    <TextView
+        android:id="@+id/TotalPriceLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/tajawal_bold"
+        android:paddingTop="5dp"
+        android:text="0LE"
+        android:textColor="@color/tabColorSelect"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_total_price" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/viewColor"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
