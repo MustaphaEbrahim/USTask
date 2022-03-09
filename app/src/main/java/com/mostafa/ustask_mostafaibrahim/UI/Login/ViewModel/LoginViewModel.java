@@ -5,7 +5,7 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 
-import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnDataProviderResponseListener;
+import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnRepoResponseListener;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.RequestBody.Base.PostObject;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.RequestBody.login.LoginValue;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Base.Result;
@@ -36,7 +36,7 @@ public class LoginViewModel extends BaseViewModel {
         PostObject postObject = new PostObject(loginValue);
 
 
-        getUserRepository().login(postObject, new OnDataProviderResponseListener<LoginResponse>() {
+        getUserRepository().login(postObject, new OnRepoResponseListener<LoginResponse>() {
             @Override
             public void onSuccess(LoginResponse response) {
 

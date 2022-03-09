@@ -9,14 +9,14 @@ import com.mostafa.ustask_mostafaibrahim.Repository.Server.Consumer.WebServiceCo
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-public abstract class BaseDataProvider<D> {
+public abstract class BaseRepo<D> {
 
     protected DatabaseCreator mDb;
     protected Context context;
     protected WebServiceConsumer webServiceConsumer;
     protected Executor executor = Executors.newSingleThreadExecutor();
 
-    public BaseDataProvider() {
+    public BaseRepo() {
         this.context = App.getAppContext();
         this.mDb = DatabaseCreator.getInstance(context);
         this.webServiceConsumer = WebServiceConsumer.sharedInstance;

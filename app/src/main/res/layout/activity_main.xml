@@ -40,6 +40,7 @@
     <com.google.android.material.tabs.TabLayout
         android:elevation="5dp"
         android:layout_margin="5dp"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
         android:id="@+id/tabLayout"
         app:tabBackground="@drawable/tab_unchecked"
         android:background="@drawable/tab_unchecked"

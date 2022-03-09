@@ -8,7 +8,7 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 
-import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnDataProviderResponseListener;
+import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnRepoResponseListener;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.RequestBody.Base.PostObject;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.RequestBody.BillsItems.BillsItemValue;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Base.Result;
@@ -44,7 +44,7 @@ public class DetailsItemViewModel extends BaseViewModel {
 
         PostObject postObject = new PostObject(billsValue);
 
-        getUserRepository().billsDetails(postObject, new OnDataProviderResponseListener<BillsDetailsResponse>() {
+        getUserRepository().billsDetails(postObject, new OnRepoResponseListener<BillsDetailsResponse>() {
             @Override
             public void onSuccess(BillsDetailsResponse response) {
                 deliveryDetailsBills.clear();

@@ -1,8 +1,8 @@
 package com.mostafa.ustask_mostafaibrahim.Repository.Repo;
 
 
-import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.BaseDataProvider;
-import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnDataProviderResponseListener;
+import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.BaseRepo;
+import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnRepoResponseListener;
 import com.mostafa.ustask_mostafaibrahim.Repository.Database.Models.User.User;
 import com.mostafa.ustask_mostafaibrahim.Repository.Database.Models.User.UserDao;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.RequestBody.Base.PostObject;
@@ -11,7 +11,7 @@ import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.BillsDea
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.BillsItemResponse.BillsResponse;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Login.LoginResponse;
 
-public class UserRepository extends BaseDataProvider<UserDao> {
+public class UserRepository extends BaseRepo<UserDao> {
     public static UserRepository sharedInstance = new UserRepository();
 
 
@@ -20,9 +20,9 @@ public class UserRepository extends BaseDataProvider<UserDao> {
         return this.mDb.userDao();
     }
 
-    public void login(PostObject postObject, OnDataProviderResponseListener<LoginResponse> responseListener){
+    public void login(PostObject postObject, OnRepoResponseListener<LoginResponse> responseListener){
         webServiceConsumer.callService(webServiceConsumer.getApi().Login(postObject),
-                new OnDataProviderResponseListener<LoginResponse>() {
+                new OnRepoResponseListener<LoginResponse>() {
             @Override
             public void onSuccess(LoginResponse response) {
 
@@ -37,8 +37,8 @@ public class UserRepository extends BaseDataProvider<UserDao> {
         });
     }
 
-    public void bills(PostObject postObject, OnDataProviderResponseListener<BillsResponse> responseListener){
-        webServiceConsumer.callService(webServiceConsumer.getApi().Bills(postObject), new OnDataProviderResponseListener<BillsResponse>() {
+    public void bills(PostObject postObject, OnRepoResponseListener<BillsResponse> responseListener){
+        webServiceConsumer.callService(webServiceConsumer.getApi().Bills(postObject), new OnRepoResponseListener<BillsResponse>() {
             @Override
             public void onSuccess(BillsResponse response) {
                 responseListener.onSuccess(response);
@@ -51,8 +51,8 @@ public class UserRepository extends BaseDataProvider<UserDao> {
         });
     }
 
-    public void billsDetails(PostObject postObject, OnDataProviderResponseListener<BillsDetailsResponse> responseListener){
-        webServiceConsumer.callService(webServiceConsumer.getApi().BillsDetails(postObject), new OnDataProviderResponseListener<BillsDetailsResponse>() {
+    public void billsDetails(PostObject postObject, OnRepoResponseListener<BillsDetailsResponse> responseListener){
+        webServiceConsumer.callService(webServiceConsumer.getApi().BillsDetails(postObject), new OnRepoResponseListener<BillsDetailsResponse>() {
             @Override
             public void onSuccess(BillsDetailsResponse response) {
                 responseListener.onSuccess(response);
@@ -65,7 +65,7 @@ public class UserRepository extends BaseDataProvider<UserDao> {
         });
     }
 
-    public void getUser(OnDataProviderResponseListener<User> responseListener) {
+    public void getUser(OnRepoResponseListener<User> responseListener) {
         executor.execute(new Runnable() {
             @Override
             public void run() {

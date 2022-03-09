@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.mostafa.ustask_mostafaibrahim.R;
 import com.mostafa.ustask_mostafaibrahim.Application.App;
-import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnDataProviderResponseListener;
+import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnRepoResponseListener;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Base.ResponseObject;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Base.Result;
 import com.mostafa.ustask_mostafaibrahim.Utilities.NetworkUtil;
@@ -51,7 +51,7 @@ public class WebServiceConsumer {
         return distTrackApi;
     }
 
-    public <T extends ResponseObject> void callService(Call<T> requestCall, OnDataProviderResponseListener<T> onResponseListener) {
+    public <T extends ResponseObject> void callService(Call<T> requestCall, OnRepoResponseListener<T> onResponseListener) {
 
         if (NetworkUtil.isConnectionAvaiable(context)) {
             requestCall.enqueue(new Callback<T>() {
@@ -112,7 +112,7 @@ public class WebServiceConsumer {
 
     }
 
-    private <T extends ResponseObject> void handleResponse(Response<T> response, OnDataProviderResponseListener<T> onResponseListener) {
+    private <T extends ResponseObject> void handleResponse(Response<T> response, OnRepoResponseListener<T> onResponseListener) {
         try {
             if (response.isSuccessful()) {
                 ResponseObject responseBody = response.body();

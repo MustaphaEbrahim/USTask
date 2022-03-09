@@ -7,7 +7,7 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 
-import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnDataProviderResponseListener;
+import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnRepoResponseListener;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.RequestBody.Base.PostObject;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.RequestBody.BillsItems.BillsItemValue;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Base.Result;
@@ -47,7 +47,7 @@ public class NewViewModel extends BaseViewModel {
 
         PostObject postObject = new PostObject(billsValue);
 
-        getUserRepository().bills(postObject, new OnDataProviderResponseListener<BillsResponse>() {
+        getUserRepository().bills(postObject, new OnRepoResponseListener<BillsResponse>() {
             @Override
             public void onSuccess(BillsResponse response) {
                 deliveryBillsList.clear();
