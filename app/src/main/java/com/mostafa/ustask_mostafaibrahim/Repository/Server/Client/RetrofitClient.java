@@ -1,4 +1,4 @@
-package com.mostafa.ustask_mostafaibrahim.Repository.Server.Consumer;
+package com.mostafa.ustask_mostafaibrahim.Repository.Server.Client;
 
 import android.content.Context;
 
@@ -21,15 +21,15 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class WebServiceConsumer {
-    public static WebServiceConsumer sharedInstance = new WebServiceConsumer();
+public class RetrofitClient {
+    public static RetrofitClient sharedInstance = new RetrofitClient();
 
     private String baseServerUrl;
     private Retrofit retrofit;
     private Context context;
     private MyApiEndpointInterface distTrackApi;
 
-    private WebServiceConsumer() {
+    private RetrofitClient() {
         defineRetrofit();
     }
 

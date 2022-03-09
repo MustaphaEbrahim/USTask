@@ -1,4 +1,4 @@
-package com.mostafa.ustask_mostafaibrahim.Repository.Server.Consumer;
+package com.mostafa.ustask_mostafaibrahim.Repository.Server.Client;
 
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.RequestBody.Base.PostObject;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.BillsDeatailsResponse.BillsDetailsResponse;
