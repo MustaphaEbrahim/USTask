@@ -7,8 +7,8 @@ import com.mostafa.ustask_mostafaibrahim.Application.App;
 import com.mostafa.ustask_mostafaibrahim.Repository.Repo.Base.OnRepoResponseListener;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Base.ResponseObject;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Base.Result;
-import com.mostafa.ustask_mostafaibrahim.Utilities.NetworkUtil;
-import com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper;
+import com.mostafa.ustask_mostafaibrahim.Util.NetworkUtil;
+import com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper;
 
 import java.util.concurrent.TimeUnit;
 

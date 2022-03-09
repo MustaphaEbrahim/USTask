@@ -1,15 +1,14 @@
 package com.mostafa.ustask_mostafaibrahim.UI.Detials.view;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 
-import static com.mostafa.ustask_mostafaibrahim.Utilities.CommonMethods.round;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.CUSTOMER_NAME;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.DATE_ORDER;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.DELIVERY;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.ORDER_NUMBER;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.SUBTOTAL;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.TAXES;
+import static com.mostafa.ustask_mostafaibrahim.Util.CommonMethods.round;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.CUSTOMER_NAME;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.DATE_ORDER;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.DELIVERY;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.ORDER_NUMBER;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.SUBTOTAL;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.TAXES;
 
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -18,12 +17,11 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 
-import com.mostafa.ustask_mostafaibrahim.Adapters.AdapterNewBills;
 import com.mostafa.ustask_mostafaibrahim.Adapters.AdapterOrderDetails;
 import com.mostafa.ustask_mostafaibrahim.R;
 import com.mostafa.ustask_mostafaibrahim.UI.Base.BaseActivity;
 import com.mostafa.ustask_mostafaibrahim.UI.Detials.ViewModel.DetailsItemViewModel;
-import com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper;
+import com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper;
 import com.mostafa.ustask_mostafaibrahim.databinding.ActivityDetailsItemBinding;
 
 public class DetailsItemActivity extends BaseActivity {

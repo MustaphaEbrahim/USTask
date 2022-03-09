@@ -1,4 +1,4 @@
-package com.mostafa.ustask_mostafaibrahim.Utilities;
+package com.mostafa.ustask_mostafaibrahim.Util;
 
 import android.content.Context;
 import android.view.View;
@@ -6,9 +6,7 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-/**
- * Created by Youssif Hamdy on 12/8/2019.
- */
+
 public abstract class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
 

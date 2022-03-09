@@ -17,7 +17,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 import com.mostafa.ustask_mostafaibrahim.R;
 import com.mostafa.ustask_mostafaibrahim.Application.LocaleHelper;
-import com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper;
+import com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper;
 
 import java.util.Locale;
 

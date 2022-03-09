@@ -1,24 +1,19 @@
 package com.mostafa.ustask_mostafaibrahim.UI.Main.View;
 
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.nameDelivery;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.nameDelivery;
 
-import android.annotation.SuppressLint;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.mostafa.ustask_mostafaibrahim.R;
 import com.mostafa.ustask_mostafaibrahim.databinding.ActivityMainBinding;
 import com.mostafa.ustask_mostafaibrahim.UI.Base.BaseActivity;
 import com.mostafa.ustask_mostafaibrahim.UI.New.View.NewFragment;
 import com.mostafa.ustask_mostafaibrahim.UI.Other.View.OtherFragment;
-import com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper;
+import com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper;
 
 import java.util.ArrayList;
 import java.util.List;

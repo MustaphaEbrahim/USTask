@@ -1,11 +1,9 @@
-package com.mostafa.ustask_mostafaibrahim.Utilities;
+package com.mostafa.ustask_mostafaibrahim.Util;
 
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mostafa.ustask_mostafaibrahim.UI.Main.View.RecyclerViewClickInterface;
 import com.mostafa.ustask_mostafaibrahim.databinding.BillsRowBinding;
 import com.mostafa.ustask_mostafaibrahim.databinding.OrderDetailsItemRowBinding;
 

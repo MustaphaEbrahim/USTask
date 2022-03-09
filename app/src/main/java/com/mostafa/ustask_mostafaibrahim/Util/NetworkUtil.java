@@ -1,12 +1,10 @@
-package com.mostafa.ustask_mostafaibrahim.Utilities;
+package com.mostafa.ustask_mostafaibrahim.Util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-/**
- * Created by Youssif Hamdy on 3/15/2020.
- */
+
 public class NetworkUtil {
 
     public static int TYPE_WIFI = 1;

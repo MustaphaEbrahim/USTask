@@ -1,20 +1,17 @@
 package com.mostafa.ustask_mostafaibrahim.Adapters;
 
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.BILL_NO_SRl;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.CUSTOMER_NAME;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.DATE_ORDER;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.DELIVERY;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.ORDER_NUMBER;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.BILL_NO_SRl;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.CUSTOMER_NAME;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.DATE_ORDER;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.DELIVERY;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.ORDER_NUMBER;
 
-import static com.mostafa.ustask_mostafaibrahim.Utilities.CommonMethods.round;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.SUBTOTAL;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.TAXES;
+import static com.mostafa.ustask_mostafaibrahim.Util.CommonMethods.round;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.SUBTOTAL;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.TAXES;
 
 import android.annotation.SuppressLint;
-import android.content.res.ColorStateList;
-import android.content.res.Resources;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,8 +22,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.mostafa.ustask_mostafaibrahim.R;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.BillsItemResponse.DeliveryBills;
 import com.mostafa.ustask_mostafaibrahim.UI.Main.View.RecyclerViewClickInterface;
-import com.mostafa.ustask_mostafaibrahim.Utilities.RecyclerViewHolders;
-import com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper;
+import com.mostafa.ustask_mostafaibrahim.Util.RecyclerViewHolders;
+import com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper;
 import com.mostafa.ustask_mostafaibrahim.databinding.BillsRowBinding;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.mostafa.ustask_mostafaibrahim.Utilities;
+package com.mostafa.ustask_mostafaibrahim.Util;
 
 
 public class Constants {

@@ -1,7 +1,7 @@
 package com.mostafa.ustask_mostafaibrahim.UI.Detials.ViewModel;
 
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.deliveryNo;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.BILL_NO_SRl;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.deliveryNo;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.BILL_NO_SRl;
 
 import android.app.Application;
 
@@ -15,7 +15,7 @@ import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.Base.Res
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.BillsDeatailsResponse.BillsDetailsResponse;
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.BillsDeatailsResponse.DeliveryDetailsBills;
 import com.mostafa.ustask_mostafaibrahim.UI.Base.BaseViewModel;
-import com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper;
+import com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper;
 
 import java.util.ArrayList;
 import java.util.List;

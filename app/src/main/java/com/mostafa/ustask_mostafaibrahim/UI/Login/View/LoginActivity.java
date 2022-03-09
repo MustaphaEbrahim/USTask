@@ -1,7 +1,7 @@
 package com.mostafa.ustask_mostafaibrahim.UI.Login.View;
 
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.deliveryNo;
-import static com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper.nameDelivery;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.deliveryNo;
+import static com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper.nameDelivery;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import com.mostafa.ustask_mostafaibrahim.databinding.ActivityLoginBinding;
 import com.mostafa.ustask_mostafaibrahim.UI.Base.BaseActivity;
 import com.mostafa.ustask_mostafaibrahim.UI.Login.ViewModel.LoginViewModel;
 import com.mostafa.ustask_mostafaibrahim.UI.Main.View.MainActivity;
-import com.mostafa.ustask_mostafaibrahim.Utilities.SharedPreferenceHelper;
+import com.mostafa.ustask_mostafaibrahim.Util.SharedPreferenceHelper;
 
 public class LoginActivity extends BaseActivity {
 

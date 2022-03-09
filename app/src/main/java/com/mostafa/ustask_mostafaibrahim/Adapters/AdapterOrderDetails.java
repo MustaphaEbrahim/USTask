@@ -1,19 +1,16 @@
 package com.mostafa.ustask_mostafaibrahim.Adapters;
 
-import static com.mostafa.ustask_mostafaibrahim.Utilities.CommonMethods.round;
+import static com.mostafa.ustask_mostafaibrahim.Util.CommonMethods.round;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.BillsDeatailsResponse.DeliveryDetailsBills;
-import com.mostafa.ustask_mostafaibrahim.Repository.Server.ResponseBody.BillsItemResponse.DeliveryBills;
-import com.mostafa.ustask_mostafaibrahim.UI.Main.View.RecyclerViewClickInterface;
-import com.mostafa.ustask_mostafaibrahim.Utilities.RecyclerViewHolders;
+import com.mostafa.ustask_mostafaibrahim.Util.RecyclerViewHolders;
 import com.mostafa.ustask_mostafaibrahim.databinding.OrderDetailsItemRowBinding;
 
 import java.util.List;

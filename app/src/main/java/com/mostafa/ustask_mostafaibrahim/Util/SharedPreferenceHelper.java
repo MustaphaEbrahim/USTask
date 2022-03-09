@@ -1,9 +1,7 @@
-package com.mostafa.ustask_mostafaibrahim.Utilities;
+package com.mostafa.ustask_mostafaibrahim.Util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
-import retrofit2.http.PUT;
 
 public class SharedPreferenceHelper {
     private final static String PREF_FILE = "PREF";
